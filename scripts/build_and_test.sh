@@ -4,7 +4,7 @@ set -eo pipefail
 project_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$project_root"
 if [[ ! -f /opt/ros/humble/setup.bash ]]; then
-  echo 'ROS 2 Humble not found. See docs/QUICKSTART.md.'
+  echo 'ROS 2 Humble not found. See README.md.'
   exit 2
 fi
 source /opt/ros/humble/setup.bash
