@@ -1,0 +1,25 @@
+armor_aim:
+  ros__parameters:
+    image_topic: /image_raw
+    serial_port: /dev/pts/0
+    serial_baud: 115200
+    own_color: auto
+    projectile_speed: 600.0
+    prediction_latency_seconds: 0.12
+    # 敌方提前量与友军检查时间分开配置，当前保留最后的折中版参数。
+    enemy_prediction_latency_seconds: 0.03
+    enemy_confirmation_seconds: 0.0
+    friendly_balanced: true
+    friendly_safety_priority: false
+    fire_interval_seconds: 0.0
+    detector:
+      color_threshold: 100
+      minimum_brightness: 100
+      minimum_area: 12.0
+      maximum_area: 3500.0
+      minimum_aspect_ratio: 0.55
+      maximum_aspect_ratio: 8.0
+    tracker:
+      maximum_match_distance: 120.0
+      maximum_missed_frames: 5
+      minimum_hit_streak: 5

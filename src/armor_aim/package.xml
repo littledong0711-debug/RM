@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>armor_aim</name>
+  <version>1.0.0</version>
+  <description>Vision tracking and serial fire control for the 2026 team assessment.</description>
+  <maintainer email="candidate@example.com">candidate</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>cv_bridge</depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <exec_depend>ros2launch</exec_depend>
+  <test_depend>ament_cmake_test</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
